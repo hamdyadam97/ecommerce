@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static from static %}
+{%block title %}
+cFE_storm
+{%endblock %}
+{% block styles%}
+.jumbotron{
+color:red;}
+{% endblock %}
+{% block jumbotron2 %}
+<div class="jumbotron">
+    <h1>Navbar example</h1>
+      <h1>base</h1>
+    <p class="lead">This example is a quick exercise to illustrate how the top-aligned navbar works. As you scroll, this navbar remains in its original position and moves with the rest of the page.</p>
+    <a class="btn btn-lg btn-primary" href="/docs/4.4/components/navbar/" role="button">View navbar docs &raquo;</a>
+  </div>
+
+{% endblock %}
+{% block content %}
+<div class="row">
+{% for product in products %}
+    <div class="col-sm-4">
+        <div class="img-thumbnail">
+            {% if product.productimage_set.all %}
+            {% for item in product.productimage_set.all %}
+            {% if item.featured %}
+            <a href="{{product.get_absolute_url}}">
+                 <div style="width: 200px; height: 300px;  background-repeat: no-repeat; background-size: cover;background-position: center;
+              background-image: url('{{item.image.url}}') ; margin: 0 auto;"></div>
+            </a>
+<!--        <img class="img-fluid " src="{{item.image.url}}">-->
+        {%endif %}
+        {% endfor %}
+            {% else %}
+            <img src=' {%static "img/33.jpg"%}' class="img-fluid">
+            {% endif %}
+            <div class="table-responsive">
+                <a href="{{product.get_absolute_url}}"><h3>{{product.title}}</h3></a>
+                <p class="figure-caption">{{product.description|truncatewords:15}}</p>
+                <p><a href="{{product.get_absolute_url}}" class="btn btn-primary" role="button">view</a>
+                <a href="#" class="btn btn-default" role="button">Button</a> </p>
+            </div>
+    </div>
+</div>
+    {% cycle "" "" "" "</div><br/><hr/><div class='row'>" %}
+{% endfor  %}
+
+</div>
+{% endblock %}
+

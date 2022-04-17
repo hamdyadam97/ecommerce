@@ -1,0 +1,19 @@
+ <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+  <a class="navbar-brand" href="{%url 'home'%}">CES ECOMMERCE</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <form class="form-inline mt-2 mt-md-0" action="/search/">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" name="search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+    <ul class="nav navbar-nav navbar-brand navbar-collapse align-right" >
+      <li class="badge"><a href="{%url 'products'%}">products</a></li>
+      <li class="badge"><a href="{%url 'cart'%}">cart <span class="badge">{{request.session.items_total}}</span></a></li>
+      {% if user.is_authenticated %}
+      <li class="badge"><a href="#">Account</a></li>
+      {% endif %}
+    </ul>
+  </div>
+</nav>

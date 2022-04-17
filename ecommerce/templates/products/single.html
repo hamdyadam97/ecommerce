@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="page-item">
+    <h1>{{product.title}}</h1>
+</div>
+<div class="row">
+    <div class="col-sm-4">
+        {% for img in images %}
+        {% if img.featured %}
+        <div class="col-sm-12">
+            <img class="img-fluid " src="{{img.image.url}}">
+        </div>
+        {% endif %}
+        {% endfor %}
+        {% for img in images %}
+        {% if  not img.featured %}
+        <div class="col-sm-12">
+            <a href="#" class="img-fluid">
+                <img class="img-fluid " src="{{img.image.url}}">
+            </a>
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+    <div class="col-sm-8">
+<!--         <a href="{% url 'update_cart' product.slug%}?qty=12" class="rounded-right"> Add Cart </a>-->
+        <div class="float-right col-sm-8">
+        <h1> {{product.title}} </h1>
+        </div>
+        <div class=" col-sm-4">
+            <form class="" method="POST" action="{% url 'update_cart' product.slug%}">{% csrf_token %}
+                 <input class="form-control" type="number" name="qty">
+                {% if product.variation_set.all %}
+                {% if product.variation_set.sizes %}
+                 <select class="form-control" name="size">
+                     {% for item in product.variation_set.sizes %}
+                    <option value="{{item.title|lower}}">{{item.title|capfirst}}</option>
+                     {% endfor %}
+                 </select>
+                {% endif %}
+                {% if product.variation_set.colors %}
+                 <select class="form-control" name="color">
+                     {% for item in product.variation_set.colors %}
+                    <option value="{{item.title|lower}}">{{item.title|capfirst}}</option>
+                     {% endfor %}
+                 </select>
+                {% endif %}
+                {% endif %}
+
+                 <input  class="btn btn-dark btn-block" type="submit" value="ADD CART">
+           </form>
+       </div>
+        <div class="col-sm-12">
+            price {{product.price}}<br>
+            shipping : free with 25+ purchash
+            <hr>
+        </div>
+        <div class="col-sm-12">
+            {{product.description|linebreaks}}
+        </div>
+    </div>
+</div>
+{% endblock %}

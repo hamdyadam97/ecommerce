@@ -1,0 +1,60 @@
+<component name="libraryTable">
+  <library name="Google App Engine SDK" type="python">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/Lib/abc.py" />
+      <root url="file://$PROJECT_DIR$/Lib/base64.py" />
+      <root url="file://$PROJECT_DIR$/Lib/bisect.py" />
+      <root url="file://$PROJECT_DIR$/Lib/codecs.py" />
+      <root url="file://$PROJECT_DIR$/Lib/collections" />
+      <root url="file://$PROJECT_DIR$/Lib/copy.py" />
+      <root url="file://$PROJECT_DIR$/Lib/copyreg.py" />
+      <root url="file://$PROJECT_DIR$/Lib/distutils" />
+      <root url="file://$PROJECT_DIR$/Lib/encodings" />
+      <root url="file://$PROJECT_DIR$/Lib/enum.py" />
+      <root url="file://$PROJECT_DIR$/Lib/fnmatch.py" />
+      <root url="file://$PROJECT_DIR$/Lib/functools.py" />
+      <root url="file://$PROJECT_DIR$/Lib/genericpath.py" />
+      <root url="file://$PROJECT_DIR$/Lib/hashlib.py" />
+      <root url="file://$PROJECT_DIR$/Lib/heapq.py" />
+      <root url="file://$PROJECT_DIR$/Lib/hmac.py" />
+      <root url="file://$PROJECT_DIR$/Lib/imp.py" />
+      <root url="file://$PROJECT_DIR$/Lib/importlib" />
+      <root url="file://$PROJECT_DIR$/Lib/io.py" />
+      <root url="file://$PROJECT_DIR$/Lib/keyword.py" />
+      <root url="file://$PROJECT_DIR$/Lib/linecache.py" />
+      <root url="file://$PROJECT_DIR$/Lib/locale.py" />
+      <root url="file://$PROJECT_DIR$/Lib/no-global-site-packages.txt" />
+      <root url="file://$PROJECT_DIR$/Lib/ntpath.py" />
+      <root url="file://$PROJECT_DIR$/Lib/operator.py" />
+      <root url="file://$PROJECT_DIR$/Lib/orig-prefix.txt" />
+      <root url="file://$PROJECT_DIR$/Lib/os.py" />
+      <root url="file://$PROJECT_DIR$/Lib/posixpath.py" />
+      <root url="file://$PROJECT_DIR$/Lib/random.py" />
+      <root url="file://$PROJECT_DIR$/Lib/re.py" />
+      <root url="file://$PROJECT_DIR$/Lib/reprlib.py" />
+      <root url="file://$PROJECT_DIR$/Lib/rlcompleter.py" />
+      <root url="file://$PROJECT_DIR$/Lib/shutil.py" />
+      <root url="file://$PROJECT_DIR$/Lib/site-packages" />
+      <root url="file://$PROJECT_DIR$/Lib/site.py" />
+      <root url="file://$PROJECT_DIR$/Lib/sre_compile.py" />
+      <root url="file://$PROJECT_DIR$/Lib/sre_constants.py" />
+      <root url="file://$PROJECT_DIR$/Lib/sre_parse.py" />
+      <root url="file://$PROJECT_DIR$/Lib/stat.py" />
+      <root url="file://$PROJECT_DIR$/Lib/struct.py" />
+      <root url="file://$PROJECT_DIR$/Lib/tarfile.py" />
+      <root url="file://$PROJECT_DIR$/Lib/tempfile.py" />
+      <root url="file://$PROJECT_DIR$/Lib/token.py" />
+      <root url="file://$PROJECT_DIR$/Lib/tokenize.py" />
+      <root url="file://$PROJECT_DIR$/Lib/types.py" />
+      <root url="file://$PROJECT_DIR$/Lib/warnings.py" />
+      <root url="file://$PROJECT_DIR$/Lib/weakref.py" />
+      <root url="file://$PROJECT_DIR$/Lib/_bootlocale.py" />
+      <root url="file://$PROJECT_DIR$/Lib/_collections_abc.py" />
+      <root url="file://$PROJECT_DIR$/Lib/_dummy_thread.py" />
+      <root url="file://$PROJECT_DIR$/Lib/_weakrefset.py" />
+      <root url="file://$PROJECT_DIR$/Lib/__future__.py" />
+      <root url="file://$PROJECT_DIR$/Lib/__pycache__" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>
